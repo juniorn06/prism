@@ -1,0 +1,49 @@
+public class Livro {
+    private String titulo;
+    private String autor;
+    private String isbn;
+    private int anoPublicacao;
+    private String editora;
+    private int numeroPaginas;
+    private String genero;
+    private double preco;
+    // Métodos getters e setters
+}
+
+public class Usuario {
+    private String nome;
+    private String matricula;
+    private String email;
+    private String telefone;
+    // Métodos getters e setters
+}
+
+public class Emprestimo {
+    private Livro livro;
+    private Usuario usuario;
+    private LocalDate dataEmprestimo;
+    private LocalDate dataDevolucao;
+    // Métodos getters e setters
+}
+
+public class Biblioteca {
+    private List<Livro> livros;
+    private List<Usuario> usuarios;
+    private List<Emprestimo> emprestimos;
+    
+    public void adicionarLivro(Livro livro) {
+        // Implementação
+    }
+
+    public void cadastrarUsuario(Usuario usuario) {
+        // Implementação
+    }
+
+    public void realizarEmprestimo(Livro livro, Usuario usuario) {
+        // Implementação
+    }
+
+    public void devolverLivro(Livro livro, Usuario usuario) {
+        // Implementação
+    }
+}
