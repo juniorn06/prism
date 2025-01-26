@@ -21,13 +21,13 @@ public class Emprestimo {
     @Column(name = "ID")
     private Long id;
     @ManyToOne
-    @JoinColumn(name = "livro_id")
+    @JoinColumn(name = "LIVRO")
     private Livro livro;
     @ManyToOne
-    @JoinColumn(name = "usuario_id")
+    @JoinColumn(name = "USUARIO")
     private Usuario usuario;
-    @JoinColumn(name = "data_emprestimo")
+    @JoinColumn(name = "DATA_EMPRESTIMO")
     private Date dataEmprestimo;
-    @JoinColumn(name = "dataDevolucao")
+    @JoinColumn(name = "DATA_DEVOLUCAO")
     private Date dataDevolucao;
 }

@@ -18,5 +18,6 @@ public class Autor {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID")
     private Long id;
+    @Column(name = "NOME")
     private String nome;
 }

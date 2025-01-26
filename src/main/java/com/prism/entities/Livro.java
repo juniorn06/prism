@@ -18,11 +18,18 @@ public class Livro {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID")
     private Long id;
+    @Column(name = "AUTOR")
     private String autor;
+    @Column(name = "ANO_PUBLICACAO")
     private Integer anoPublicacao;
+    @Column(name = "EDITORA")
     private String editora;
+    @Column(name = "NUMERO_PAGINAS")
     private Integer numeroPaginas;
+    @Column(name = "TITULO")
     private String titulo;
+    @Column(name = "ISBN")
     private String isbn;
+    @Column(name = "GENERO")
     private String genero;
 }

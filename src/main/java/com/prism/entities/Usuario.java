@@ -18,8 +18,12 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID")
     private Long id;
+    @Column(name = "NOME")
     private String nome;
+    @Column(name = "EMAIL")
     private String email;
+    @Column(name = "SENHA")
     private String senha;
+    @Column(name = "TELEFONE")
     private String telefone;
 }
